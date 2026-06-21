@@ -1,0 +1,28 @@
+# ────────────────────────────────────────────────────────────────
+# Automated IT Newsroom - Git 버전 관리 제외 설정 파일 (.gitignore)
+# ────────────────────────────────────────────────────────────────
+
+# Streamlit의 민감 설정 파일 (API 키 및 비밀번호 포함)
+# 절대 Git에 올라가지 않도록 예방합니다.
+.streamlit/secrets.toml
+
+# Python 가상 환경 (Virtual Environment)
+.venv/
+venv/
+ENV/
+
+# Python 컴파일 및 캐시 파일
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+
+# 로컬 개발 시 생성될 수도 있는 OS 임시 파일들
+.DS_Store
+Thumbs.db
+
+# 로컬 스토리지 모드 활성화 시 생성되는 로컬 데이터 파일들
+feeds.json
+news_data.json
+stats.json
+
